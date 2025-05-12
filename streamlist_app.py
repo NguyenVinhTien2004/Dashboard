@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import json
 
 # Đọc dữ liệu từ file CSV
-data = pd.read_csv("kf_coffee (1) - Sao chép - Trang tính1.csv")
+data = pd.read_csv("kf_coffee.csv")
 
 # Chuẩn hóa tên cột
 data.columns = data.columns.str.strip().str.lower()
