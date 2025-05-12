@@ -1,7 +1,10 @@
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import json
+import streamlit as st
+st.pyplot(fig)
+
+uploaded_file = st.file_uploader("Upload file CSV", type="csv")
+if uploaded_file is not None:
+    data = pd.read_csv(uploaded_file)
+    # phần còn lại giữ nguyên
 
 # Đọc dữ liệu từ file CSV
 data = pd.read_csv("kf_coffee.csv")
