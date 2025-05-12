@@ -37,7 +37,7 @@ top_products = data.groupby('name')['stock_decreased'].sum().sort_values(ascendi
 revenue_by_product = data.groupby('name')['doanh_thu'].sum().sort_values(ascending=False).head(5)
 
 # Vẽ cả hai biểu đồ trong một cửa sổ
-fig, ax = plt.subplots(1, 2, figsize=(18, 7))
+fig, ax = plt.subplots(1, 2, figsize=(20, 8))
 
 # Biểu đồ top sản phẩm bán chạy nhất
 sns.barplot(x=top_products.values, y=top_products.index, palette='viridis', ax=ax[0])
