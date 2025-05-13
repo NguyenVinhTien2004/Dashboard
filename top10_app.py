@@ -5,7 +5,7 @@ import json
 import streamlit as st
 
 # Đọc dữ liệu
-data = pd.read_excel("kf_coffee (1).xlsx")
+data = pd.read_csv("kf_coffee.csv")
 
 # Chuẩn hóa tên cột
 data.columns = data.columns.str.strip().str.lower()
